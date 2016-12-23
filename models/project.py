@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #from datetime import date, datetime, timedelta
 #from openerp.exceptions import Warning
-from openerp import models, fields, api, _
+from odoo import models, fields, api, _
 
 
 class project(models.Model):

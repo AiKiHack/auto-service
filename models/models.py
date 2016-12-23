@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from datetime import date, datetime, timedelta
-from openerp.exceptions import Warning
-from openerp import models, fields, api, _, SUPERUSER_ID
+from odoo.exceptions import Warning
+from odoo import models, fields, api, _, SUPERUSER_ID
 #from odoo.exceptions import Warning
 #from odoo import models, fields, api, _, SUPERUSER_ID
 

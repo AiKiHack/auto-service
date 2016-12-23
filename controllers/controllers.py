@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#from openerp import http
+#from odoo import http
 
 # class Autoservice(http.Controller):
 #     @http.route('/autoservice/autoservice/', auth='public')
