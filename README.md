@@ -2,7 +2,7 @@
 # Auto service module for Odoo 
 
 This is beta verssion for test purpouses.
-It uses only new API - Odoo v8(not tested), v9 and v10.
+It uses only new API file name convention - Odoo  v10.
 
 ## Installation
 
