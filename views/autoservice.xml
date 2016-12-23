@@ -157,24 +157,24 @@
                             <group>
                                 <field name="accepted_sets" string="Accp ids" attrs="{'readonly': True, 'invisible': True}"/>
                                 <field name="accorder_sets_ids"  string="Accepted" attrs="{'readonly' : True}"/>
-                            </group>
-                            </group>
-                            <separator/>
                             <field name="contract_operation_imported" attrs="{'invisible': True}"/> 
-                            <separator/>
-                            <group>
-                                <field name="test_txt" string="Opr ids" attrs="{'readonly': True, 'invisible': [['test_txt', '=', False]]}"/>
-                                <field name="order_operations_ids" string="Order operations" attrs="{'readonly' : ['|', '|', ['stage_id', 'in', [5]], ['cancel', '=', True], ['contract_operation_imported', '=', False]]}"/>
                             </group>
                         </page>
                         <page string="Order operation list" icon= "fa-play">
-                          <!--  <separator/>
-                                <field name="contract_operation_imported" /> --><!-- TODO attrs="{'invisible' : [['uid', '!=', 'SUPERUSER_ID']]}"  uid not found   self.env.user.id != SUPERUSER_ID-->
-                            <!-- <separator/>
-                             <group>
-                                 <field name="test_txt" string="Opr ids" attrs="{'readonly': True, 'invisible': [['test_txt', '=', False]]}"/>
-                                 <field name="order_operations_ids" string="Order operations" attrs="{'readonly' : ['|', '|', ['stage_id', 'in', [5]], ['cancel', '=', True], ['contract_operation_imported', '=', False]]}"/>
-                             </group> -->
+                           <group>
+                            <group>
+                                <field name="test_txt" string="Opr ids" attrs="{'readonly': True, 'invisible': [['test_txt', '=', True]]}"/>
+                                <field name="order_operations_ids" string="Order operations" attrs="{'readonly' : ['|', '|', ['stage_id', 'in', [5]], ['cancel', '=', True], ['contract_operation_imported', '=', False]]}"/>
+                            </group>
+                            <group>
+                                <label for="project_id"/>
+                                <button 
+                                        name="convert_operations_to_tasks"  type="object" class="oe_highlight" string="Convert operations to tasks"
+                                        icon= "fa-stack-exchange" attrs="{'invisible': ['|', '|', ['stage_id', 'in', [5]], ['cancel', '=', True], ['order_operations_ids', '=', False]]}">
+                                </button>
+                                <!-- buton and task heare convert_operations_to_tasks-->
+                            </group>
+                            </group>
                         </page>
                         <page string="Privacy options">
                             <group>
