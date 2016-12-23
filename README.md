@@ -8,7 +8,7 @@ It uses only new API file name convention - Odoo  v10.
 
     As standard Odoo module. For more information :
 
-    https://www.odoo.com/
+    https://www.odoo.com/documentation/10.0/
 
 ## Usage
 
